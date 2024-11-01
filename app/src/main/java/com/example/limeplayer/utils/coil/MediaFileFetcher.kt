@@ -14,6 +14,9 @@ import coil.fetch.FetchResult
 import coil.fetch.Fetcher
 import coil.fetch.SourceResult
 import coil.request.Options
+import com.example.filelock.data.readHeader
+import com.example.filelock.share.FileLockerStream
+import com.example.filelock.utils.LOCK_FOLDER
 import com.example.limeplayer.BaseApplication
 import com.example.limeplayer.utils.getExtension
 import kotlinx.coroutines.Dispatchers

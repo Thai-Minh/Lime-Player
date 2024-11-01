@@ -19,11 +19,31 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
 
+        maven {
+            url = URI.create("https://artifact.bytedance.com/repository/pangle")
+        }
+        maven {
+            url = URI.create("https://android-sdk.is.com/")
+        }
+        maven {
+            url =
+                URI.create("https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea")
+        }
+
         val username = providers.gradleProperty("artifactory_username").get()
         val password = providers.gradleProperty("artifactory_password").get()
 
         maven {
             url = URI.create("http://139.59.246.166:8082/artifactory/tapi-library")
+            isAllowInsecureProtocol = true
+            credentials {
+                this.username = username
+                this.password = password
+            }
+        }
+
+        maven {
+            url = URI.create("http://139.59.246.166:8082/artifactory/vincent-library")
             isAllowInsecureProtocol = true
             credentials {
                 this.username = username
