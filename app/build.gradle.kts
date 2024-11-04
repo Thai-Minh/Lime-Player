@@ -4,6 +4,9 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 
     alias(libs.plugins.ksp)
+
+    id("com.google.gms.google-services")
+    id("com.google.firebase.crashlytics")
 }
 
 android {
@@ -44,6 +47,9 @@ android {
     }
     buildFeatures {
         compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.15"
     }
 }
 
@@ -99,11 +105,21 @@ dependencies {
 
     // Room Database
     implementation(libs.room.runtime)
-//    ksp(libs.room.compiler)
+
+    ksp(libs.room.compiler)
     implementation(libs.room.ktx)
 
     implementation(project(":manager"))
     implementation(project(":catcher"))
+    implementation(project(":local-file-manager"))
+
+    // Firebase
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.config.ktx)
+    implementation(libs.firebase.analytics.ktx)
+    implementation(libs.firebase.crashlytics.ktx)
+    implementation(libs.firebase.messaging.ktx)
+    implementation(libs.firebase.inappmessaging.display.ktx)
 
     // load image drawable
     implementation(libs.accompainist.drawable.painter)

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "877434181045",
+    "project_id": "lime-player",
+    "storage_bucket": "lime-player.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877434181045:android:12fb35da74bbca94f7b5fc",
+        "android_client_info": {
+          "package_name": "com.example.limeplayer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ93V52j_6gC8PVyPU6peDUqIu-TZaDrQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

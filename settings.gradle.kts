@@ -55,6 +55,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "Lime Player"
 include(":app")
+
+include(":local-file-manager")
+
 include(":catcher")
 include(":manager")
 include(":downloader")

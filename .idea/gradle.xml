@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/../0038.AllDownloaderCatcher/catcher" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/local-file-manager" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />
